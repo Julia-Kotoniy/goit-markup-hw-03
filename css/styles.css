@@ -17,8 +17,6 @@ body {
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0.03em;
-
-  width: 1600px;
 }
 
 ul {
@@ -31,6 +29,12 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -41,9 +45,9 @@ a {
 
 /* Header Styles */
 
-/* header {
-  background-color: teal;
-} */
+header {
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
 
 .logo-text {
   color: rgba(0, 0, 0, 1);
@@ -139,7 +143,7 @@ a {
   padding: 10px 32px;
   border-radius: 4px;
 
-  border: 1px solid transparent;
+  border: none;
   background-color: var(--accent-color);
   color: var(--white-text);
   font-family: inherit;
@@ -157,7 +161,7 @@ a {
   color: var(--white-text);
 }
 
-/* Advantages Container */
+/* Advantages Styles */
 
 .visually-hidden {
   position: absolute;
@@ -207,7 +211,7 @@ a {
   line-height: 1.7;
 }
 
-/* Work Container */
+/* Work Styles */
 
 .work {
   padding-top: 0;
@@ -266,7 +270,7 @@ a {
   border-radius: 0px 0px 4px 4px;
 }
 
-.cards .text {
+.card-content {
   padding-top: 30px;
   padding-bottom: 30px;
 
@@ -331,8 +335,23 @@ footer .item + .item {
 
 /* Portfolio Styles */
 
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.port-button {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
 .button {
+  display: inline-block;
+  padding: 6px 22px;
+  border-radius: 4px;
   border: none;
+
   background-color: var(--secondary-back);
   color: var(--title-text);
   font-family: inherit;
@@ -342,6 +361,10 @@ footer .item + .item {
   letter-spacing: 0.03em;
 }
 
+.port-button .item + .item {
+  margin-left: 8px;
+}
+
 .button:hover,
 .button:focus,
 .button:active {
@@ -349,7 +372,29 @@ footer .item + .item {
   color: var(--white-text);
 }
 
-.project-title {
+.project {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.project .item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.project-content {
+  padding: 20px 24px;
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
+  border-left: 1px solid rgba(238, 238, 238, 1);
+  border-right: 1px solid rgba(238, 238, 238, 1);
+}
+
+.project-content .project-title {
   color: var(--title-text);
   font-style: normal;
   font-weight: 700;
