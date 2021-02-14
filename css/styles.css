@@ -149,6 +149,7 @@ header {
 .hero-button {
   padding: 10px 32px;
   border-radius: 4px;
+  display: inline-block;
 
   border: none;
   background-color: var(--accent-color);
