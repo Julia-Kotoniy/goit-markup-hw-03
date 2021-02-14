@@ -1,0 +1,233 @@
+:root {
+  --white-text: rgba(255, 255, 255, 1);
+  --title-text: rgba(33, 33, 33, 1);
+  --accent-color: rgba(33, 150, 243, 1);
+  --grey-text: rgba(117, 117, 117, 1);
+  --footer-contacts: rgba(255, 255, 255, 0.6);
+
+  --hero-back: rgba(47, 48, 58, 1);
+  --primary-back: rgba(255, 255, 255, 1);
+  --secondary-back: rgba(245, 244, 250, 1);
+}
+
+body {
+  background-color: var(--primary-back);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.03em;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header Styles */
+
+header > a {
+  color: rgba(0, 0, 0, 1);
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.logo {
+  color: var(--accent-color);
+}
+
+.nav-text {
+  color: var(--title-text);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+
+.nav-text:hover,
+.nav-text:focus {
+  color: var(--accent-color);
+}
+
+.current {
+  color: var(--accent-color);
+}
+
+.header-cont {
+  color: var(--grey-text);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+
+/* Hero Styles */
+
+.hero {
+  background-color: var(--hero-back);
+}
+
+.hero-title {
+  color: var(--white-text);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.hero-button {
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--white-text);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.hero-button:hover,
+.hero-button:focus,
+.hero-button:active {
+  background-color: var(--accent-color);
+  color: var(--white-text);
+}
+
+/* Main Styles */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.advant-title {
+  color: var(--title-text);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.advant-text {
+  color: var(--grey-text);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.work-title {
+  color: var(--title-text);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.our-team {
+  background-color: var(--secondary-back);
+}
+
+.team-title {
+  color: var(--title-text);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.cards {
+  background-color: var(--primary-back);
+}
+
+.card-title {
+  color: var(--title-text);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.card-text {
+  color: var(--grey-text);
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+/* Footer Styles */
+
+footer {
+  background-color: var(--hero-back);
+}
+
+footer > a {
+  color: var(--white-text);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.address {
+  color: var(--white-text);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.footer-cont {
+  color: var(--footer-contacts);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Portfolio Styles */
+
+.button {
+  border: none;
+  background-color: var(--secondary-back);
+  color: var(--title-text);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: var(--accent-color);
+  color: var(--white-text);
+}
+
+.project-title {
+  color: var(--title-text);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project-text {
+  color: var(--grey-text);
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.9;
+}
