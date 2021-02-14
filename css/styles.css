@@ -119,6 +119,12 @@ header {
   letter-spacing: 0.02em;
 }
 
+main {
+  width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 /* Hero Styles */
 
 .hero {
